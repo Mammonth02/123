@@ -20,8 +20,8 @@ for i in sss:
     url = 'https://shop.casio.ru'+i.get('href')
     dd = [name, cena, url]
     chasy.append(dd)
-    print(name)
+    print(type(chasy))
 
 
-with open('chasy/sss.json', 'w') as f:
-    json.dump(chasy, f, indent=4,ensure_ascii=False)
+with open('chasy/ss.json', 'w', encoding='utf-8') as f:
+    json.dump(chasy, f, indent=4, ensure_ascii=False)
