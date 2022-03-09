@@ -10,7 +10,6 @@ for i in range(1, 10):
 
     ccc = soup.find_all(class_='product-item__link')
     sss.extend(ccc)
-    break
 
 chasy = []
 
@@ -21,6 +20,7 @@ for i in sss:
     url = 'https://shop.casio.ru'+i.get('href')
     dd = [name, cena, url]
     chasy.append(dd)
+    print(name)
 
 
 with open('chasy/sss.json', 'w') as f:
